@@ -1,10 +1,19 @@
 ---
 layout: post
-title: You're up and running!
+title: Hello World
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Hello, my name is Oleg and welcome to my blog! I intend for this blog to be mainly about programming and software, but may have a few other topics randomly thrown in. My plan is to mostly treat this as a sort of personal diary/stream of consciousness outlet, rather that trying to create some kind of publicly popular blog. So don't really expect too much in terms of production values.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+A bit about myself: I'm a software engineer currently living in Sydney Australia. My tech-related interests are in the areas of programming, robotics and machine learning, so the things I write about will definitely tend to lean in that direction. But really, anything tech related is fair game I think. I expect most of my posts will be relatively short and "ranty", just because writing long well-structured arguments sounds like too much work.
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+Address any "fan mail" to `osushkov@gmail.com`
+
+
+```C++
+int main(void) {
+  printf("hello world\n");
+  return 0;
+}
+```
+

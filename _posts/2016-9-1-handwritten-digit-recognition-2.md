@@ -23,8 +23,11 @@ One of the problems with neural networks with several hidden layers is that, alt
 An autoencoder is a type of feed-forward neural net that has an output layer with the same dimensionality as the input, and its target output is equal to the input. Autoencoders can be used to extract some higher level features from an input signal, and perform dimensionality reduction while retaining as much important information as possible. One variant is the de-noising autoencoder, in which cases we stochastically dropout parts of the input signal at training time, but use the unaltered input in the loss function. In the specific case of digit recognition, we could set some random set of pixels of each training image to 0, but then expect the autoencoder to output the original image. Theoretically pre-training each hidden layer of a feed-forward network as the hidden layer of a de-noising autoencoder could help get a good initial state for more effective training using gradient descent. 
 
 Below is an example of the performance of a trained autoencoder with a single hidden layer. Around 0.35 of the input pixels are dropped during training, and the hidden layer is half the size of the input layer. As can be seen, the network does a good job of reconstructing the input despite the dropped information and layer bottleneck.
+
+<p align="center">
 ![Input image]({{ site.baseurl }}/images/2016/04/input1.png)
 ![Reconstructed image]({{ site.baseurl }}/images/2016/04/output1-1.png)
+</p>
 
 
 ### Generating Training Data
