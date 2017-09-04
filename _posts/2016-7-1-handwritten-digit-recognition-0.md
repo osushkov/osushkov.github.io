@@ -3,8 +3,6 @@ layout: post
 title: Handwritten Digit Recognition - Part 0
 ---
 
-The code for this can be found on GitHub: [here](https://github.com/osushkov/handwriting) (*warning:* code is experimental and may be slightly messy).
-
 Recently I remembered a fun/interesting assignment we were given in first year computing at UNSW - handwritten digit recognition. The gist of the assignment was basically that you are given as input a grey-scale image of a handwritten digit (between 0 and 9), and your program had to output which digit it is. The input images were approximately 30x30 pixels. An extension to this was to recognise postcodes, a sequence of 4 digits with the added problem of dealing with digit separation (it's not always trivial to separate the pixels of individual digits from each other).
 
 ![Example images from the MNIST dataset]({{ site.baseurl }}/images/mnistExamples.png)

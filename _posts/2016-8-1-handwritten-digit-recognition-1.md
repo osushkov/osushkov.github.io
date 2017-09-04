@@ -3,8 +3,6 @@ layout: post
 title: Handwritten Digit Recognition - Part 1
 ---
 
-The code for this can be found on GitHub: [here](https://github.com/osushkov/handwriting) (*warning:* code is experimental and may be slightly messy).
-
 As mentioned in the [previous post](https://thevoid.ghost.io/hand-written-digit-recognition/), I've spent some time working on the problem of hand-written digit recognition. This is a pretty fun problem and also a good domain for experimenting with neural nets. Here I'll note down some of my experiences so far, lessons learned, and plans for future improvement.
 
 ## Feed Forward Net
