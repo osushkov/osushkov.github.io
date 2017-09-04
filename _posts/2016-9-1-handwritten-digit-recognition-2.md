@@ -24,8 +24,9 @@ An autoencoder is a type of feed-forward neural net that has an output layer wit
 
 Below is an example of the performance of a trained autoencoder with a single hidden layer. Around 0.35 of the input pixels are dropped during training, and the hidden layer is half the size of the input layer. As can be seen, the network does a good job of reconstructing the input despite the dropped information and layer bottleneck.
 
-![Input image]({{ site.baseurl }}/images/input1.png){: .center-image }
-![Reconstructed image]({{ site.baseurl }}/images/output1-1.png){: .center-image }
+![Input image >]({{ site.baseurl }}/images/input1.png)
+
+![Reconstructed image <>]({{ site.baseurl }}/images/output1-1.png)
 
 
 ### Generating Training Data
@@ -33,6 +34,7 @@ Having lots of training data is good, but is not always possible. In the MNIST d
 
 ### End Result
 So the end result of trying several of the above mentioned improvements was both surprising and satisfying. It was surprising because using a denoising autoencoder pre-training step did not really improve the accuracy of the final neural network when using the tanh activation function (but it did help when using the logistic function). Having said that, the ReLU function network ended up working the best (with no pre-training). Below are the results for the three different approches, showing the network loss vs time, and network performance on the test dataset vs time. I truncated the first few iterations for the test error graph to better show the relative performance of the approaches (otherwise the difference gets lost due to scaling of the y-axis). The headline error rate achieved is **0.9%** by the Rectified Linear Unit network, with a `784 -> 784 -> 392 -> 196 -> 10` network (3 hidden layers). The other networks (tanh activation with and without autoencoder pre-training) achieved slightly higher error rates, but still under 1%.
+
 ![Network Loss]({{ site.baseurl }}/images/image--2-.png)
 ![Network Loss]({{ site.baseurl }}/images/image--1-.png)
 
