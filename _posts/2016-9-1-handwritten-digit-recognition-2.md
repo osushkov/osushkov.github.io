@@ -24,10 +24,8 @@ An autoencoder is a type of feed-forward neural net that has an output layer wit
 
 Below is an example of the performance of a trained autoencoder with a single hidden layer. Around 0.35 of the input pixels are dropped during training, and the hidden layer is half the size of the input layer. As can be seen, the network does a good job of reconstructing the input despite the dropped information and layer bottleneck.
 
-<p align="center">
-![Input image]({{ site.baseurl }}/images/input1.png)
-![Reconstructed image]({{ site.baseurl }}/images/output1-1.png)
-</p>
+![Input image]({{ site.baseurl }}/images/input1.png){: .center-image }
+![Reconstructed image]({{ site.baseurl }}/images/output1-1.png){: .center-image }
 
 
 ### Generating Training Data
