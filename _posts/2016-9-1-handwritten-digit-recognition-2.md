@@ -21,7 +21,7 @@ Regularization refers to the measures taken to prevent a classifier from over-fi
 One of the problems with neural networks with several hidden layers is that, although its representative power increases, it becomes harder to train. One of the proposed solutions to this is to start the gradient descent training from a good starting point, as opposed to simply using randomly initialised weights. One idea is to pre-train individual hidden layers as [autoencoders](https://en.wikipedia.org/wiki/Autoencoder).
 
 
-![Example images from the MNIST dataset]({{ site.baseurl }}/images/Zwsmz.png)
+![Example images from the MNIST dataset <>]({{ site.baseurl }}/images/Zwsmz.png)
 
 
 An autoencoder is a type of feed-forward neural net that has an output layer with the same dimensionality as the input, and its target output is equal to the input. Autoencoders can be used to extract some higher level features from an input signal, and perform dimensionality reduction while retaining as much important information as possible. One variant is the de-noising autoencoder, in which cases we stochastically dropout parts of the input signal at training time, but use the unaltered input in the loss function. In the specific case of digit recognition, we could set some random set of pixels of each training image to 0, but then expect the autoencoder to output the original image. Theoretically pre-training each hidden layer of a feed-forward network as the hidden layer of a de-noising autoencoder could help get a good initial state for more effective training using gradient descent. 
@@ -41,9 +41,9 @@ Having lots of training data is good, but is not always possible. In the MNIST d
 ### End Result
 So the end result of trying several of the above mentioned improvements was both surprising and satisfying. It was surprising because using a denoising autoencoder pre-training step did not really improve the accuracy of the final neural network when using the tanh activation function (but it did help when using the logistic function). Having said that, the ReLU function network ended up working the best (with no pre-training). Below are the results for the three different approches, showing the network loss vs time, and network performance on the test dataset vs time. I truncated the first few iterations for the test error graph to better show the relative performance of the approaches (otherwise the difference gets lost due to scaling of the y-axis). The headline error rate achieved is **0.9%** by the Rectified Linear Unit network, with a `784 -> 784 -> 392 -> 196 -> 10` network (3 hidden layers). The other networks (tanh activation with and without autoencoder pre-training) achieved slightly higher error rates, but still under 1%.
 
-![Network Loss]({{ site.baseurl }}/images/image--2-.png)
+![Network Loss <>]({{ site.baseurl }}/images/image--2-.png)
 
-![Network Loss]({{ site.baseurl }}/images/image--1-.png)
+![Network Loss <>]({{ site.baseurl }}/images/image--1-.png)
 
 The code for this can be [found on GitHub](https://github.com/osushkov/deephandwriting)
 
