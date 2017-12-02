@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a Research Engineer, currently working in London. My technical interests are mainly around machine learning, reinforcement learning, and robotics.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[osushkov@gmail.com](mailto:osushkov@gmail.com)
