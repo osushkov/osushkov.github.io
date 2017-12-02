@@ -3,7 +3,7 @@ layout: post
 title: Handwritten Digit Recognition - Part 1
 ---
 
-As mentioned in the [previous post](% post-url 2016-7-1-handwritten-digit-recognition-0 %), I've spent some time working on the problem of hand-written digit recognition. This is a pretty fun problem and also a good domain for experimenting with neural nets. Here I'll note down some of my experiences so far, lessons learned, and plans for future improvement.
+As mentioned in the [previous post](https://osushkov.github.io/handwritten-digit-recognition-0/), I've spent some time working on the problem of hand-written digit recognition. This is a pretty fun problem and also a good domain for experimenting with neural nets. Here I'll note down some of my experiences so far, lessons learned, and plans for future improvement.
 
 ## Feed Forward Net
 My first attempt was to use a simple feed-forward net with a logistic activation function. The high level overview is as follows:
