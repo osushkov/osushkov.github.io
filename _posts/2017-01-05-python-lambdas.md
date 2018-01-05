@@ -8,7 +8,7 @@ and some language design decisions can really cause some bizzare bugs. I ran int
 capture, and variable scoping. At first the below snippets should all produce the same output.
 
 Common code:
-```
+```python
 my_list = np.array([1,2,3,4])
 funcs = []
 
@@ -17,19 +17,19 @@ for i, v in enumerate(my_list.tolist()):
 ```
 
 Snippet A:
-```
+```python
 for i in range(len(funcs)):
   print("value A: {} {}".format(i, funcs[i]()))
 ```
 
 Snippet B:
-```
+```python
 for j in range(len(funcs)):
   print("value B: {} {}".format(j, funcs[j]()))
 ```
 
 Snippet C:
-```
+```python
 def stuff():
   for i in range(len(funcs)):
     print("value C: {} {}".format(i, funcs[i]()))
