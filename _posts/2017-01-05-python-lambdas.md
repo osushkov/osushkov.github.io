@@ -49,6 +49,6 @@ One might expect that the output would be the following:
 4 4
 ```
 
-However, due to the fact that Python lambda variable capture is by-reference and the weird variable scoping rules, only *Snippet C* works "as expeced".
+However, due to the fact that Python lambda variable capture is by-reference and the weird variable scoping rules, only *Snippet A* works "as expeced".
 When I ran into this it was causing a relatively subtle bug and took a fair amount of time to find. Now I know.
 
